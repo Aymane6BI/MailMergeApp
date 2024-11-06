@@ -1,0 +1,16 @@
+placeholder = "Namen"
+
+sjabloon = open("Input/Letters/starting_letter.txt", "r")
+Namen = open("Input/Names/invited_names.txt", "r")
+
+with open("Input/Letters/starting_letter.txt") as sjabloon:
+    print(sjabloon.read())
+
+with open("Input/Names/invited_names.txt") as Namen:
+    print(Namen.read())
+
+    for Namen in :
+        stripnaam = Namen.strip
+        vervang = sjabloon.replace(placeholder, stripnaam)
+        with open("Input/Letters/invited_names.txt",mode=w) as file:
+            file.write(vervang)
